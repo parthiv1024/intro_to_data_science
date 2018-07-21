@@ -1,7 +1,7 @@
 from sklearn import tree
 from sklearn import svm
 from sklearn.naive_bayes import GaussianNB
-from sklearn.neural_network import MLPClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 #[height, weight, shoe size]
@@ -12,7 +12,7 @@ Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female', 'fe
 clf1 = tree.DecisionTreeClassifier()
 clf2 = svm.SVC()
 clf3 = GaussianNB()
-clf4 = MLPClassifier(hidden_layer_sizes=(2, 2))
+clf4 = RandomForestClassifier()
 
 clf1 = clf1.fit(X, Y)
 clf2 = clf2.fit(X, Y)
@@ -22,4 +22,4 @@ clf4 = clf4.fit(X, Y)
 print("Decision Tree Classifier: " + str(accuracy_score(Y, clf1.predict(X))))
 print("Support Vector Machine Classifier: " + str(accuracy_score(Y, clf2.predict(X))))
 print("Naive Bayes Classifier: " + str(accuracy_score(Y, clf3.predict(X))))
-print("Neural Network Classifier: " + str(accuracy_score(Y, clf4.predict(X))))
+print("Random Forest Classifier: " + str(accuracy_score(Y, clf4.predict(X))))
