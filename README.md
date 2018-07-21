@@ -5,7 +5,8 @@ This is the code for the solution to Siraj Raval's first coding challenge on 'in
 Decision Tree Classifier: 1.0  
 Support Vector Machine Classifier: 1.0  
 Naive Bayes Classifier: 0.8181818181818182  
-Neural Network Classifier: 0.8181818181818182
+Neural Network Classifier: 0.5454545454545454  
+NOTE - For the MLP Neural Network the results kept changing but mostly they were alternating between 0.454545.. and 0.545454..
 ## Dependencies
 Scikit learn - To install Scikit-learn run sudo pip3 install scikit-learn or sudo pip install scikit-learn
 ## Usage
