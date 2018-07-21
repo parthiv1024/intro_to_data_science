@@ -12,7 +12,7 @@ Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female', 'fe
 clf1 = tree.DecisionTreeClassifier()
 clf2 = svm.SVC()
 clf3 = GaussianNB()
-clf4 = MLPClassifier(hidden_layer_sizes=(5, 2))
+clf4 = MLPClassifier(hidden_layer_sizes=(2, 2))
 
 clf1 = clf1.fit(X, Y)
 clf2 = clf2.fit(X, Y)
